@@ -42,5 +42,16 @@ public class StudentTests
     result.Should().Be(Status.Dropout);
   }
 
+  [Fact]
+  public void TestName()
+  {
+    Student student = new Student(1, "John", "Doe", new DateTime(2020, 8, 30), new DateTime(2021, 4, 4), new DateTime(2024, 4, 4));
 
+    var result = student.toString();
+
+    result.Should().Be($@"StudentID: 1
+    First name: John
+    Surname: Doe
+    Status: Dropout");
+  }
 }
