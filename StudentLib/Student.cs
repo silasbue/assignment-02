@@ -42,6 +42,14 @@ public class Student
   public DateTime StartDate { get; set; }
   public DateTime EndDate { get; set; }
   public DateTime GraduationDate { get; set; }
+
+  public string toString()
+  {
+    return $@"StudentID: {id}
+    First name: {GivenName}
+    Surname: {SurName}
+    Status: {status}";
+  }
 }
 
 public enum Status
