@@ -44,8 +44,8 @@ public class ImmutableStudentsTests{
         var expected_Output = $@"StudentID: 264, FirstName: John, Surname: Doe, Status: Graduated, Start Date: {startDate}, 
         End Date: {endDate}, Graduation Date: {graduationDate}";
 
-        var toString_Output = immutableStudent.ToString();
+        var actual_Output = immutableStudent.ToString();
 
-        Assert.Equal(expected_Output, toString_Output);
+        Assert.Equal(expected_Output, actual_Output);
     }
 }
