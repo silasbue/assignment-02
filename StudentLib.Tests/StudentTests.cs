@@ -43,7 +43,7 @@ public class StudentTests
   }
 
   [Fact]
-  public void TestName()
+  public void Student_ToString_returns_string()
   {
     Student student = new Student(1, "John", "Doe", new DateTime(2020, 8, 30), new DateTime(2021, 4, 4), new DateTime(2024, 4, 4));
 
@@ -54,4 +54,6 @@ public class StudentTests
     Surname: Doe
     Status: Dropout");
   }
+
+
 }
